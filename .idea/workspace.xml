@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7f020f-f189-4c7a-85b6-63219afc23b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Constraints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/NodeDistancePair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Places.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/ShortestPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ba/edu/ssst/ShortestPathTest.java" afterDir="false" />
+    <list default="true" id="bc7f020f-f189-4c7a-85b6-63219afc23b8" name="Changes" comment="commit message">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Constraints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Constraints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Places.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/edu/ssst/Places.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ba/edu/ssst/ShortestPathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ba/edu/ssst/ShortestPathTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,34 +38,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.ShortestPathTest.executor": "Run",
-    "JUnit.ShortestPathTest.testDijkstra.executor": "Run",
-    "JUnit.ShortestPathTest.testInvalidSourceNode.executor": "Debug",
-    "JUnit.ShortestPathTest.testOptimalTravelTimesSimple.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Asus/IdeaProjects/Assignment 2 - final version/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShortestPathTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShortestPathTest.testDijkstra.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShortestPathTest.testInvalidSourceNode.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ShortestPathTest.testOptimalTravelTimesSimple.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/IdeaProjects/Assignment 2 - final version/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ba.edu.ssst" />
@@ -128,11 +121,26 @@
       <workItem from="1703448332681" duration="1636000" />
       <workItem from="1703497771105" duration="279000" />
       <workItem from="1703498343712" duration="420000" />
-      <workItem from="1703602547064" duration="3364000" />
+      <workItem from="1703602547064" duration="4252000" />
+      <workItem from="1703608329875" duration="101000" />
+      <workItem from="1703775669887" duration="2466000" />
     </task>
+    <task id="LOCAL-00001" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1703606574527</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703606574527</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit message" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit message" />
   </component>
 </project>

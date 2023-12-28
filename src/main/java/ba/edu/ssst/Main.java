@@ -75,10 +75,9 @@ public class Main {
                 String[] parts = scanner.nextLine().split(",");
                 String placeA = parts[0];
                 String placeB = parts[1];
-                String constraint = parts[2];
                 Double probability = Double.parseDouble(parts[3]);
 
-                constraintsList.add(new Constraints(placeA, placeB, constraint, probability));
+                constraintsList.add(new Constraints(placeA, placeB, probability));
             }
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
@@ -93,16 +92,12 @@ public class Main {
         for (String sourceNodeShortcode : graph.getNodesMap().keySet()) {
             String sourceNodeName = Places.getPlaceName(sourceNodeShortcode);
 
-            if (!"Unknown".equals(sourceNodeName)) {
-                for (String destinationNodeShortcode : graph.getNodesMap().keySet()) {
-                    if (!sourceNodeShortcode.equals(destinationNodeShortcode)) {
-                        String destinationNodeName = Places.getPlaceName(destinationNodeShortcode);
+            for (String destinationNodeShortcode : graph.getNodesMap().keySet()) {
+                if (!sourceNodeShortcode.equals(destinationNodeShortcode)) {
 
-                        if (!"Unknown".equals(destinationNodeName)) {
-                            int optimalTravelTime = ShortestPath.dijkstra(graph, sourceNodeShortcode, destinationNodeShortcode);
-                            fileWriter.write(sourceNodeName + " -> " + destinationNodeName + ": " + optimalTravelTime + " seconds \n");
-                        }
-                    }
+                    String destinationNodeName = Places.getPlaceName(destinationNodeShortcode);
+                    int optimalTravelTime = ShortestPath.dijkstra(graph, sourceNodeShortcode, destinationNodeShortcode);
+                    fileWriter.write(sourceNodeName + " -> " + destinationNodeName + ": " + optimalTravelTime + " seconds \n");
                 }
             }
         }

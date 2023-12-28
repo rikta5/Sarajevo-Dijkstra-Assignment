@@ -11,7 +11,7 @@ public class Places {
     }
 
     public static String getPlaceName(String shortcode) {
-        return placeNamesMap.getOrDefault(shortcode, "Unknown");
+        return placeNamesMap.getOrDefault(shortcode, shortcode);
     }
 
 }

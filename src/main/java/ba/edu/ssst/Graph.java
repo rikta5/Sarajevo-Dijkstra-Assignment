@@ -3,6 +3,7 @@ package ba.edu.ssst;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class Graph {
     private final Map<String, Node> nodesMap;
@@ -22,18 +23,29 @@ public class Graph {
         Node sourceNode = nodesMap.get(source);
         Node destinationNode = nodesMap.get(destination);
 
-        Constraints constraint = findConstraint(source, destination, constraintsList);
-
-        sourceNode.addNeighbor(destinationNode, timeNeededToTravel, constraint);
+        int modifiedTime = checkConstraint(source, destination, constraintsList);
+        if(modifiedTime == 0) {
+            sourceNode.addNeighbor(destinationNode, timeNeededToTravel);
+            return;
+        }
+        sourceNode.addNeighbor(destinationNode, modifiedTime);
     }
-    private Constraints findConstraint(String source, String destination, List<Constraints> constraintsList) {
-        for (Constraints constraint : constraintsList) {
-            if (constraint.getPlaceA().equals(source) && constraint.getPlaceB().equals(destination)) {
-                return constraint;
+    private Integer checkConstraint(String source, String destination, List<Constraints> constraintsList) {
+        for(Constraints constraint : constraintsList) {
+            if(constraint.getPlaceA().equals(source) && constraint.getPlaceB().equals(destination)) {
+                double probability = constraint.getProbability();
+                if (probability == 0.0) {
+                    return 0;
+                }
+                Random random = new Random();
+                double randomDouble = random.nextDouble();
+                randomDouble = Math.round(randomDouble * 100.0) / 100.0;
+                if (randomDouble <= probability) {
+                    return -1;
+                }
             }
         }
-
-        return new Constraints(source, destination, "none", 0.0);
+        return 0;
     }
 
     public Map<String, Node> getNodesMap() {

@@ -8,7 +8,6 @@ import java.util.List;
 public class ShortestPathTest extends TestCase {
 
     public void testIfThereIsAPathToDestinationNode() {
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 0.0));
 
@@ -23,7 +22,6 @@ public class ShortestPathTest extends TestCase {
     }
 
     public void testIfAllNodesAreConnected(){
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 0.0));
 
@@ -60,7 +58,6 @@ public class ShortestPathTest extends TestCase {
     }
 
     public void testInvalidSourceNode() {
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 0.0));
 
@@ -73,7 +70,6 @@ public class ShortestPathTest extends TestCase {
     }
 
     public void testInvalidDestinationNode() {
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 0.0));
 
@@ -86,7 +82,6 @@ public class ShortestPathTest extends TestCase {
     }
 
     public void testWithNegativeTime() {
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 0.0));
 
@@ -99,7 +94,6 @@ public class ShortestPathTest extends TestCase {
     }
 
     public void testGraphWithSelfLoop() {
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 0.0));
 
@@ -114,7 +108,6 @@ public class ShortestPathTest extends TestCase {
     }
 
     public void testWithCertainProbability() {
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 1.0));
         constraintsList.add(new Constraints("B", "D", 1.0));
@@ -136,7 +129,6 @@ public class ShortestPathTest extends TestCase {
     }
 
     public void testWithNoConstraints() {
-        fillPlaces();
         List<Constraints> constraintsList = new ArrayList<>();
         constraintsList.add(new Constraints("A", "B", 0.0));
         constraintsList.add(new Constraints("B", "D", 0.0));
@@ -152,9 +144,5 @@ public class ShortestPathTest extends TestCase {
         assertEquals(15, ShortestPath.dijkstra(graph, "B", "C"));
         assertEquals(20, ShortestPath.dijkstra(graph, "B", "D"));
         assertEquals(20, ShortestPath.dijkstra(graph, "C", "I"));
-    }
-
-    private void fillPlaces() {
-        Main.fillPlacesClass();
     }
 }
